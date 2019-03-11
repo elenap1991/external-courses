@@ -1,9 +1,12 @@
 var funcTupeDefinition = function (variable){
-    if (typeof variable == "string") {
-        return "string";
-    }else if (typeof variable == "number"){
-        return "number;"
+    if (typeof variable == 'string'){
+        return 'string';
+    } else if (typeof variable == 'number') {
+        return 'number';
     }else{
-        return "undefined";
+        variable = undefined;
+        return variable;
     }
 }
+var test = funcTupeDefinition(2);
+console.log(test);
