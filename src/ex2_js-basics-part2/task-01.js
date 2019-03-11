@@ -8,5 +8,3 @@ var funcTupeDefinition = function (variable){
         return variable;
     }
 }
-var test = funcTupeDefinition(2);
-console.log(test);
