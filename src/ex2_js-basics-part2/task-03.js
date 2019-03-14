@@ -1,12 +1,11 @@
 function countOddEven (arr){
-  var countOdd = 0;
-  var countEven = 0;
-  var countZero = 0;
-  for (val of arr) {
-    if (typeof val === "number") {
-      if (val === 0) {
+  var countOdd, countEven, countZero;
+  countOdd = countEven = countZero = 0;
+  for (var i = 0 ; i < arr.length ; i++) {
+    if (typeof arr[i] === "number") {
+      if (arr[i] === 0) {
         countZero++;
-      } else if (val % 2 === 0) {
+      } else if (arr[i] % 2 === 0) {
         countEven++;
       } else {
         countOdd++;
@@ -16,5 +15,5 @@ function countOddEven (arr){
   return [countEven, countOdd, countZero];
 }
 module.exports = countOddEven;
-
+console.log(countOddEven([1,2,0,0,4]))
 
