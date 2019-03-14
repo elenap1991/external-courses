@@ -5,6 +5,3 @@ function typeDefinition (variable){
     return undefined;
 }
 module.exports = typeDefinition;
-
-//var x = 5 / "jk";
-//console.log(typeDefinition());
