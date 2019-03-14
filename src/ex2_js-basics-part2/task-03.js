@@ -15,5 +15,4 @@ function countOddEven (arr){
   return [countEven, countOdd, countZero];
 }
 module.exports = countOddEven;
-console.log(countOddEven([1,2,0,0,4]))
 
