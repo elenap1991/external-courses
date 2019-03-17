@@ -1,16 +1,22 @@
 function deepClone(obj) {
-    var clone;
+    var objCopy = Object.create(Object.getPrototypeOf(obj));
     if (Array.isArray(obj)) {
-        clone = [];
+        for (var i = 0; i < obj.length; i++) {
+            if (typeof obj[i] === "object") {
+                objCopy[i] = deepClone(obj[i]);
+            } else {
+                objCopy[i] = obj[i];
+            }
+        }
     } else {
-         clone = {};
-    }
-    for (key in obj) {
-        if (typeof obj[key] === "object") {
-            clone[key] = deepClone(obj[key]);
-        } else {
-            clone[key] = obj[key];
+        for (key in obj) {
+            if (typeof obj[key] === "object") {
+                objCopy[key] = deepClone(obj[key]);
+            } else {
+                objCopy[key] = obj[key];
+            }
         }
     }
-    return clone;
+    return objCopy;
 }
+module.exports = deepClone;

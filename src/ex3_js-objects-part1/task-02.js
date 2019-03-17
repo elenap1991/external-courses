@@ -1,5 +1,5 @@
 function displayObject(obj) {
-    for (key in obj) {
+    for (var key in obj) {
         if (obj.hasOwnProperty) {
             console.log("key: " + key + " property: " + obj.key);
         }
