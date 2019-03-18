@@ -1,5 +1,5 @@
 function checkPrimality (variable){
-    if ((variable > 1000) || (variable <= 1)) {
+    if (variable > 1000 || variable <= 1) {
         return "Данные неверны";
     }
     for (var i = 2; i <= Math.sqrt(variable); i++) {
