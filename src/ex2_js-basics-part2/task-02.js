@@ -1,6 +1,6 @@
 function displayArray(arr) {
-    for (val of arr) {
-        console.log(val);
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
     }
     console.log(arr.length);
 }
