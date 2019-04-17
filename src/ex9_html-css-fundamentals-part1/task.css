@@ -1,0 +1,78 @@
+label{
+    display: inline-block;
+    width: 80px;
+    position:relative;
+    padding: 5px 0;
+}
+form{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    position: relative;
+}
+fieldset{
+    width: 425px;
+    border: none;
+}
+div{
+    position:relative;
+    display: inline-block;
+}
+input{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.inputHint div::before{
+    content: "";
+    height: 0;
+    width: 0;
+    border: 9px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: -14px;
+    left: 6px;
+    border-right-color: red;
+}
+.inputHint div::after{
+    color: white;
+    content: "Form field hint";
+    left: 20px;
+    position: absolute;
+    height: 14px;
+    width: 75px;
+    background: red;
+    padding: 3px 10px;
+    top: -15px;
+}
+.requarired label::after{
+    content: "*";
+    color:red;
+    position: absolute;
+    }
+[value="Submit"]{
+    margin-left:80px;
+    width: 80px;
+}
+legend{
+    font-weight: bold;
+    font-size: 10pt;
+}
+hr{
+    height: 1px;
+    background: black;
+}
+#i4{
+    height: 50px;
+    width: 180px;
+}
+[for="i4"]{
+    vertical-align: top;
+}
+p{
+    color: red;
+    margin: 0;
+}

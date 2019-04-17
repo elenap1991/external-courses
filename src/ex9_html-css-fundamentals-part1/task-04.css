@@ -1,0 +1,45 @@
+div{
+    height: 200px;
+    width:50%;
+    background-color: rgb(96, 184, 141);
+    margin: 20px;
+    position: relative;
+}
+#div1{
+    box-shadow: 5px 5px 0 rgba(96, 184, 141, 0.5), 10px 10px 0 rgba(96, 184, 141, 0.2);
+
+}
+#div2::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width:100%;
+    background-color: rgba(96, 184, 141, 0.5);
+    top:5px;
+    left:5px;
+    z-index: -1;
+}
+#div2::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width:100%;
+    background-color: rgba(96, 184, 141, 0.2);
+    top:10px;
+    left:10px;
+    z-index: -2;
+}
+#div32{
+    background-color:rgba(96, 184, 141, 0.5);
+    width: 100%;
+    top:5px;
+    left: -15px;
+
+}
+#div33{
+    background-color:rgba(96, 184, 141, 0.2);
+    width: 100%;
+    top:5px;
+    left: -15px;
+}
+
