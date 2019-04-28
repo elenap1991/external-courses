@@ -1,0 +1,27 @@
+img {
+    animation-name: changeForm;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count:infinite;
+    -webkit-mask-size: 442px;
+  }
+
+  @keyframes changeForm {
+    0% {
+      border-radius: 0%;
+      -webkit-mask-image: none;
+    }
+
+    50%  {
+        border-radius: 100%;
+        -webkit-mask-image: none;
+    }
+    51%  {
+        border-radius: 0%;
+        -webkit-mask-image: url(img/two-heart-png-image-90176.png);
+    }
+    100%  {
+      border-radius: 0%;
+      -webkit-mask-image: url(img/two-heart-png-image-90176.png);
+    }
+  }
