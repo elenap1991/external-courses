@@ -1,13 +1,14 @@
 function myslice(array, begin, end) {
-    var beginFunc = begin;
-    var endFunc = end;
-    var newArray = [];
-    if (endFunc === undefined || endFunc > array.length) {
+    var beginFunc, endFunc, newArray;
+    beginFunc = begin;
+    endFunc = end;
+    newArray = [];
+    if (!endFunc || endFunc > array.length) {
         endFunc = array.length;
     } else if (endFunc < 0) {
         endFunc += array.length;
     }
-    if (beginFunc === undefined) {
+    if (!beginFunc) {
         beginFunc = 0;
     } else if (beginFunc < 0) {
         beginFunc += array.length;

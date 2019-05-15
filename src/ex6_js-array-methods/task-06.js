@@ -1,6 +1,6 @@
 function myReduce(array, callback, initialValue) {
     var start, prevValue;
-    if (initialValue === undefined) {
+    if (!initialValue) {
         start = 1;
         prevValue = array[0];
     } else {
