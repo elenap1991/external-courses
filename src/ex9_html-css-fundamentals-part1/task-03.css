@@ -1,0 +1,30 @@
+button {
+    border-radius: 6px;
+    border: #8c8c8c 1px solid;
+    font-size: 12pt;
+    box-shadow: 0px 1px 1px 0.5px rgba(0, 0, 0, 0.6), inset 0 18px 1px -1px rgba(255, 255, 255, 0.3),
+    0 0 0 4px #cbcbcb, 0 0 0 5px white, 0 0 0 6px #666666, 2px 2px 6px 0 rgb(0, 0, 0);
+    position: relative;
+    margin: 6px;
+    padding: 5px 5px;
+    background: linear-gradient(rgb(240, 240, 240), rgb(177,177,177));
+    color: #555555;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    text-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.5);
+}
+
+button::after, button::before{
+    position: relative;
+    content: '\2605';
+    font-size: 18px;
+    color: rgba(136, 136, 136, 1);
+    margin: 5px;
+    z-index: 12;
+    text-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.5);
+    top:0px;
+    right: 0px;
+}
+button:active{
+    background: linear-gradient( rgb(177,177,177),rgb(240, 240, 240));
+}
