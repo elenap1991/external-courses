@@ -1,20 +1,33 @@
-input{
+.input{
     width: 100%;
     border: none;
     margin: 15px 0 0 0;
     font-size: 12pt;
 }
-div{
+.block {
     width: 100%;
     height: 40px;
     position:relative;
     display: inline-block;
 }
-fieldset{
+.block-title {
+    border-bottom: 1px black solid;
+}
+.block-price {
+    width:34%;
+}
+.block-location {
+    border-left: 1px solid black;
+    width:64%;
+}
+.block-description {
+    border-top: 1px black solid;
+}
+.fieldset{
     width:300px;
 
 }
-label {
+.label {
     position:absolute;
     left:0; top:0;
     transition: all .1s linear;
@@ -23,18 +36,18 @@ label {
     z-index: -1;
     font-size: 8pt;
 }
-input:invalid + label {
+.input:invalid + label {
     opacity: 0;
     top: 10px;
     color: #999;
 }
-input:valid + label {
+.input:valid + label {
     top:3px;
     opacity:1;
 }
-input:focus {
+.input:focus {
     outline:none;
 }
-input:focus + label {
+.input:focus + label {
     color:blue;
 }

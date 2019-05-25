@@ -1,44 +1,44 @@
-#loader{
+.loader{
     display: flex;
     flex-wrap: nowrap;
     width: 500px;
     justify-content: center;
     margin: 50px;
 }
-#loader div{
+.loader__item{
     margin: 10px;
     width:30px;
     height: 30px;
     border-radius: 100%;
 }
-#loader div:nth-child(1){
+.loader__item:nth-child(1){
     background-color: rgb(190, 170, 207);
     animation-name: shadow;
     animation-duration: 10s;
     animation-iteration-count:infinite;
 }
-#loader div:nth-child(2){
+.loader__item:nth-child(2){
     background-color:  rgb(187, 164, 207);
     animation-name: shadow;
     animation-duration: 10s;
     animation-iteration-count:infinite;
     animation-delay:2s;
 }
-#loader div:nth-child(3){
+.loader__item:nth-child(3){
     background-color: rgb(181, 150, 207);
     animation-name: shadow;
     animation-duration: 10s;
     animation-iteration-count:infinite;
     animation-delay:4s;
 }
-#loader div:nth-child(4){
+.loader__item:nth-child(4){
     background-color: rgb(180, 143, 209);
     animation-name: shadow;
     animation-duration: 10s;
     animation-iteration-count:infinite;
     animation-delay:6s;
 }
-#loader div:nth-child(5){
+.loader__item:nth-child(5){
     background-color: rgb(173, 133, 207);
     animation-name: shadow;
     animation-duration: 10s;
@@ -56,23 +56,23 @@
         box-shadow: 0 0 1px 20px rgba(190, 170, 207,0);
     }
 }
-.wall{
+.bouncing-ball__wall{
     width: 50px;
     height: 100px;
     background-image: url(https://www.allstick.ru/@s/image-cache/1d8/1d8d1c09aa91-u..product~10~10862~5b22d84cddf02.fit.crop.h.400.w.400~xgxgxgx.jpg);
 }
-#ball{
+.bouncing-ball__ball{
     width: 300px;
     height: 100px;
     background-image:url(http://i.piccy.info/i5/36/63/1016336/yt,j.jpg);
     position: relative;
 }
-#containerBall{
+.bouncing-ball{
     display: flex;
     width: 500px;
     margin: 50px;
 }
-#ball::after{
+.bouncing-ball__ball::after{
     content: "";
     width: 30px;
     height: 30px;
@@ -94,7 +94,7 @@
         left:270px;
     }
   }
-#circle{
+.circle{
     width: 300px;
     height: 300px;
     margin: 50px;

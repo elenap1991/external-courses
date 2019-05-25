@@ -1,4 +1,4 @@
-img {
+.animation_changeForm {
     animation-name: changeForm;
     animation-duration: 3s;
     position: relative;

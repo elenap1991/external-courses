@@ -14,7 +14,7 @@ header {
     height: 45px;
     background-color: antiquewhite;
 }
-nav {
+.aside {
     height: 100%;
     grid-area: navigation;
     background-color: #181e2c;
@@ -28,7 +28,7 @@ footer {
     grid-area: footer;
     background-color: blue;
 }
-.add{
+.aside__add-book{
     text-transform: uppercase;
     width: 160px;
     height: 44px;
@@ -39,22 +39,23 @@ footer {
     margin: 35px 20px;
     font-size: 14px;
 }
-.add:hover{
+.aside__add-book:hover{
     background-color: #f05a34;
+    cursor: pointer;
 }
-.add img{
+.aside__add-book img{
     margin: 0 10px;
 }
-.moduleNavigation{
+.aside__background{
     background-color: #1f2637;
     margin: 4px 0;
     border-bottom: 1px solid #141824;
     border-top: 1px solid #78829d;
 }
-ul{
+.aside__items-container{
     padding: 0;
 }
-li{
+.aside__items {
     color: #78829d;
     font-size: 13px;
     text-transform: capitalize;
@@ -63,79 +64,52 @@ li{
     list-style-type: none;
     position: relative;
 }
-.mainMenu li:nth-child(1)::before{
+.aside__main-menu .aside__items::before {
     content: "";
     position: absolute;
     width: 14px;
     height: 14px;
-    background-image: url(img/book.svg);
     top: 11px;
     left: 21px;
 }
-.mainMenu li:nth-child(1):hover::before{
+
+.aside__main-menu .aside__items:nth-child(1)::before{
+    background-image: url(img/book.svg);
+}
+.aside__main-menu .aside__items:nth-child(1):hover::before{
     background-image: url(img/book\ hover.svg);
 }
-.mainMenu li:nth-child(2)::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+.aside__main-menu .aside__items:nth-child(2)::before{
     background-image: url(img/globe.svg);
-    top: 11px;
-    left: 21px;
 }
-.mainMenu li:nth-child(2):hover::before{
+.aside__main-menu .aside__items:nth-child(2):hover::before{
     background-image: url(img/globe\ hover.svg);
 }
-.mainMenu li:nth-child(3)::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+.aside__main-menu .aside__items:nth-child(3)::before{
     background-image: url(img/shoppingtrolley.svg);
-    top: 11px;
-    left: 21px;
 }
-.mainMenu li:nth-child(3):hover::before{
+.aside__main-menu .aside__items:nth-child(3):hover::before{
     background-image: url(img/shoppingtrolley\ hover.svg);
 }
-.mainMenu li:nth-child(4)::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+.aside__main-menu .aside__items:nth-child(4)::before{
     background-image: url(img/star.svg);
-    top: 11px;
-    left: 21px;
 }
-.mainMenu li:nth-child(4):hover::before{
+.aside__main-menu .aside__items:nth-child(4):hover::before{
     background-image: url(img/star\ hover.svg);
 }
-.mainMenu li:nth-child(5)::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+.aside__main-menu .aside__items:nth-child(5)::before{
     background-image: url(img/list_icon.svg);
-    top: 11px;
-    left: 21px;
 }
-.mainMenu li:nth-child(5):hover::before{
+.aside__main-menu .aside__items:nth-child(5):hover::before{
     background-image: url(img/list_icon\ hover.svg);
 }
-.mainMenu li:nth-child(6)::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+.aside__main-menu .aside__items:nth-child(6)::before{
     background-image: url(img/clock.svg);
-    top: 11px;
-    left: 21px;
 }
-.mainMenu li:nth-child(6):hover::before{
+.aside__main-menu .aside__items:nth-child(6):hover::before{
     background-image: url(img/clock\ hover.svg);
 }
-.bookFilter li::before{
+.aside__book-filter .aside__items::before{
     content: "";
     width: 6px;
     height: 6px;
@@ -144,41 +118,42 @@ li{
     left: 25px;
     border-radius: 100%;
 }
-.bookFilter li:nth-child(1)::before{
+.aside__book-filter .aside__items:nth-child(1)::before{
     background-color: #e64c66;
 }
-.bookFilter li:nth-child(2)::before{
+.aside__book-filter .aside__items:nth-child(2)::before{
     background-color: #ffab00;
 }
-.bookFilter li:nth-child(3)::before{
+.aside__book-filter .aside__items:nth-child(3)::before{
     background-color: #00bfdd;
 }
-.bookFilter li:nth-child(4)::before{
+.aside__book-filter .aside__items:nth-child(4)::before{
     background-color: #7874cf;
 }
-li:hover{
+.aside__items:hover{
     color: white;
     background-color: #15a4fa;
+    cursor: pointer;
 }
-a{
+.aside__items a{
     height: 38px;
     line-height: 38px;
     display: inline-block;
 }
-.recentActions p{
+.aside_recent-actions p{
     font-size: 12px;
     color: #6f7d95;
 }
-.recentActions strong{
+.aside_recent-actions strong{
     font-size: 12px;
     font-weight: normal;
     color: #97b3ce;
 }
-.recentActions{
+.aside_recent-actions{
     margin: 25px 25px 25px 46px;
     position: relative;
 }
-p::before{
+.aside_recent-actions-info::before{
     content: "";
     position: absolute;
     width: 14px;
