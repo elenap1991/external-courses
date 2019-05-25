@@ -15,10 +15,6 @@ function Hangman(initWord) {
     var errorLimit;
     this.startAgain(initWord);
 
-    this.vivod = function vivod() {
-        console.log(word);
-        console.log(guessedWord);
-    }
     this.guess = function (letter) {
         if (this.getErrorsLeft() > 0) {
             var currentTry = false;

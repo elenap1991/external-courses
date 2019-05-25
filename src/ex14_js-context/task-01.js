@@ -2,7 +2,7 @@ function Calculator () {
 
     var stored = 0;
     function _isvalid(val) {
-        return isFinite(val);
+        return isFinite(val) && typeof val === "number";
     }
 
     this.add = function (a) {
