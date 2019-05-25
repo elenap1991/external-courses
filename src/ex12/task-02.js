@@ -7,41 +7,41 @@ var li;
 var ul = document.createElement("ul");
 ul.className = "menu__list";
 itemArr.forEach(el => {
-	li = document.createElement("li");
-	li.className = "menu__items";
-	li.innerHTML=el;
-	ul.appendChild(li);
+  createItemLi(el, "menu__items");
 })
-li = document.createElement("li");
-li.innerHTML = headlineText;
-li.id = "headline";
-li.className = "menu__headline";
-ul.appendChild(li);
+createItemLi(headlineText, "menu__headline", "headline");
 cont.appendChild(ul);
 
 var itemsMenu = document.getElementsByClassName("menu__items");
 
-function hiding() {
-	for(i=0;i<itemsMenu.length;i++){
-		itemsMenu[i].style.display="none";
-	}
+function createItemLi(value, className, id) {
+  li = document.createElement("li");
+  li.innerHTML = value;
+  li.className = className;
+  if (id !== undefined) { li.id = id; }
+  ul.appendChild(li);
 }
-function showing() {
-	for(i=0;i<itemsMenu.length;i++){
-		itemsMenu[i].style.display="block";
-	}
+function hide() {
+  for (i = 0; i < itemsMenu.length; i++){
+    itemsMenu[i].style.display = "none";
+  }
 }
-hiding();
-function hiddenall(event) {
-	if (event.target.id === "headline") {
-		if (itemsMenu[0].style.display === "none") {
-			showing();
-		} else {
-			hiding();
-		}
-	} else if (event.target.className !== "menu__items" && event.target.className !== "menu__list") {
-		hiding();
-	}
+function show() {
+  for (i = 0; i < itemsMenu.length; i++){
+    itemsMenu[i].style.display = "block";
+  }
+}
+hide();
+function hideAll(event) {
+  if (event.target.id === "headline") {
+    if (itemsMenu[0].style.display === "none") {
+      show();
+    } else {
+      hide();
+    }
+  } else if (event.target.className !== "menu__items" && event.target.className !== "menu__list") {
+    hide();
+  }
 }
 
-document.addEventListener("click", hiddenall);
+document.addEventListener("click", hideAll);
