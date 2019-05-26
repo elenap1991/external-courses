@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Task 01</title>
+    <link rel="stylesheet" type="text/css" href="task-01.css">
+</head>
+    <body>
+        <form method="GET" action="http://httpbin.org/get">
+            <fieldset>
+                <legend>Personal data</legend>
+                <label>Surname
+                    <input>
+                </label>
+                <br>
+                <label>First Name
+                    <input>
+                </label>
+                <br>
+                <label>Middle Name
+                    <input>
+                </label>
+                <br>
+                <label>You are
+                <input type="radio" name="sex">
+                male</label>
+                <label><input type="radio" name="sex">
+                female</label>
+                <br>
+                <label>Age
+                    <input class="interval" type="number" min = "18" max = "101">
+                </label>
+                <br>
+                <label for="select">Country of Residence</label>
+                    <select id="select">
+                        <option disabled selected>Country</option>
+                        <option>Russia</option>
+                    </select>
+                <br>
+                <label>City
+                    <input type="checkbox">
+                    Ryazan</label>
+                    <input type="checkbox">
+                    <label>Moscow
+                </label>
+                <br>
+                <label>Photography
+                    <input type="file">
+                </label>
+                <hr>
+                <label>Title
+                    <select size="8">
+                        <optgroup label="Technologies">
+                            <option>Web Master</option>
+                            <option>Database Administrator</option>
+                            <option>Computer-aided design</option>
+                        </optgroup>
+                        <optgroup label="Finance">
+                            <option>Economic Planning</option>
+                            <option>Managment accounting</option>
+                            <option>Budgeting and planning</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <br>
+                <label>Salary
+                    <input type="range">
+                </label>
+                <br>
+                <textarea cols="50" rows="10" placeholder="Tell about yourself..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Site
+                    <input type="url">
+                </label>
+                <br>
+                <label>Email
+                    <input type="email">
+                </label>
+                <br>
+                <label>Phone
+                        <input type="tel">
+                </label>
+            </fieldset>
+            <label>Password
+                <input type="password" required>
+            </label>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+    </body>
+</html>
