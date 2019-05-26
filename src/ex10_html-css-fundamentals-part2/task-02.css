@@ -1,0 +1,27 @@
+.table tr:nth-child(odd){
+  background:rgb(227,234,243);
+}
+.table tr:nth-child(even){
+  background:rgb(242,246,250);
+}
+.table tr:hover{
+background:rgb(226,229,233);
+}
+.table td:nth-child(1){
+    text-transform:capitalize;
+}
+.table td:nth-child(4)::before{
+content:"$";
+padding: 0 5px 0 0;
+}
+.table__headcolumn{
+padding: 15px;
+text-transform:uppercase;
+}
+.table__column{
+padding: 15px;
+}
+.table{
+font-family:"Arial";
+color:rgb(76,99,126);
+}
