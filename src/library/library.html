@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="css/library.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/modalWindow.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body class="library">
+    <header class="header">
+        <div class="header__button">
+            <p>Help Center</p>
+        </div>
+        <div class="header__marker"></div>
+        <div class="header__button">
+            <p>Our Support</p>
+        </div>
+        <div class="header__user">
+            <img src="img/avatar-01.png" alt="foto" class="header__user-photo">
+            <p>John Doe</p>
+            <img class="header__user-icons" src="img/arrowDown.png" alt="">
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="navigation__module">
+            <button id="buttonAdd" class="navigation__module-button-add"><img src="img/+.png" alt="">Add a book</button>
+        </div>
+        <div class="navigation__module">
+            <ul class="navigation__menu">
+                <li><a>Now reading</a></li>
+                <li><a>Browse</a></li>
+                <li><a>Buy books</a></li>
+                <li><a>Favorite books</a></li>
+                <li><a>Wishlist</a></li>
+                <li><a>History</a></li>
+            </ul>
+        </div>
+        <div class="navigation__module">
+            <ul class="navigation__menu-filter">
+                <li id="MustReadTitles">Must read Titles</li>
+                <li id="BestOfList">Best of list</li>
+                <li id="ClassicNovels">Classic novels</li>
+                <li id="NonFiction">Non fiction</li>
+                <!-- <li id="MustReadTitles"><a>Must read Titles</a></li>
+                <li id="BestOfList"><a>Best of list</a></li>
+                <li id="ClassicNovels"><a>Classic novels</a></li>
+                <li id="NonFiction"><a>Non fiction</a></li> -->
+            </ul>
+        </div>
+        <div id="history" class="navigation__module">
+            <div class="navigation__item-history">
+                <p class="navigation__clock">You added <strong>Fight Club</strong> by <strong>Chuck Palahniuk</strong> to your <strong>Must Read Titles</strong>.</p>
+                <p>24 minutes ago</p>
+            </div>
+            <div class="navigation__item-history">
+                <p class="navigation__clock">You added <strong>The Trial</strong> by <strong>Franz Kafka</strong> to your <strong>Read Titles</strong>.</p>
+                <p>48 minutes ago</p>
+            </div>
+        </div>
+    </nav>
+    <article class="article">
+        <div class="article_header">
+            <p class="article_header-label">Browse Available Books</p>
+        </div>
+        <div class="article_filter">
+            <ul>
+                <li id="allBooks">All Books</li>
+                <li id="mostRecent">Most Recent</li>
+                <li id="mostPopular">Most Popular</li>
+                <li id="freeBooks">Free Books</li>
+            </ul>
+            <label class="article_search-label"><input type="text" id="searchBox" class="article_search" placeholder="Enter Keywords"><img class="article_search-img"src="img/search.png" alt=""></label>
+        </div>
+        <div id="books" class="article_books">
+        </div>
+
+    </article>
+    <footer class="footer">
+        <div class="footer__item"><img src="img/footer_settings.png" alt="?"></div>
+        <div class="footer__item"><img src="img/footer_hint.png" alt="&#128736"></div>
+    </footer>
+    <div id="addBooKModal" class="modal-window">
+        <form id="form_AddBook">
+            <div class="modal-window__container-hint">
+                <p id="formHint" class="modal-window__hint">please fill in the required fields <i>*</i></p>
+            </div>
+            <label for="title">Book Title<i>*</i></label><input id="title" type="text" required placeholder="Enter Book Title"><br>
+            <label for="nameAuthor">Book Author Name<i>*</i></label><input id="nameAuthor" type="text" required placeholder="Enter Author Name"><br>
+            <label for="lastnameAuthor">Book Author LastName<i>*</i></label><input id="lastnameAuthor" type="text" required placeholder="Enter Author LastName"><br>
+            <label for="image">Book Image<i>*</i></label><input id="image" type="text" required placeholder="Enter Image url"></label><br>
+            <label for="cost">Book Cost<i>*</i></label><input id="cost" type="number" required placeholder="Enter Book Cost" min="0"><br>
+            <p>Selected categories</p>
+            <label for="radioMustRead">Must read Titles</label><input id="radioMustRead" type="checkbox"><br>
+            <label for="radioBest">Best of list</label><input id="radioBest" type="checkbox"><br>
+            <label for="radioClassic">Classic novels</label><input id="radioClassic" type="checkbox"><br>
+            <label for="radioNon">Non fiction</label><input id="radioNon" type="checkbox"><br>
+            <div class="modal-window__buttons">
+                <button id="formSubmit" type="button" class="modal-window__button">ADD</button>
+                <button id="formReset" class="modal-window__button">CANCEL</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<!-- <script src="library.js"></script>
+<script src="bookstore.js"></script> -->
+<!-- <script src="api.js"></script>
+<script src="stars.js"></script>
+<script src="model.js"></script>
+<script src="viev.js"></script>
+<script src="сontroller.js"></script> -->
+
+
+<script src="scripts/utils/request.js"></script>
+<script src="scripts/utils/debounce.js"></script>
+<script src="scripts/utils/idGenerator.js"></script>
+
+<script src="scripts/lib/star.js"></script>
+<script src="scripts/lib/container.js"></script>
+<!-- <script src="scripts/lib/model.js"></script> -->
+<script src="scripts/lib/store.js"></script>
+<script src="scripts/lib/view.js"></script>
+<script src="scripts/lib/controller.js"></script>
+
+<script src="scripts/modalWindow/modalWindowView.js"></script>
+<script src="scripts/modalWindow/modalWindowController.js"></script>
+
+<script src="scripts/books/bookmodel.js"></script>
+<script src="scripts/books/bookView.js"></script>
+<script src="scripts/books/bookController.js"></script>
+
+<script src="scripts/history/historymodel.js"></script>
+<script src="scripts/history/historyView.js"></script>
+<script src="scripts/history/historyController.js"></script>
+
+
+
+<script src="scripts/app/mainController.js"></script>
+
+
+<script src="scripts/app.js"></script>

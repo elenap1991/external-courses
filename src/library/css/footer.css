@@ -1,0 +1,20 @@
+.footer__item {
+    float: right;
+    background-color: #1f2637;
+    width: 55px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__item:hover {
+    background-color: #15a4fa;
+    ;
+}
+
+.footer__item img {
+    float: center;
+    width: 14px;
+    height: 14px;
+}

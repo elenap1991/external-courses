@@ -5,6 +5,9 @@
     "jest": true,
     "es6": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "rules": {
     "complexity": [0, 11],
     "consistent-return": 2,
