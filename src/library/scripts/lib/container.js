@@ -1,0 +1,3 @@
+function ItemContainer() {
+    this.items = {};
+}

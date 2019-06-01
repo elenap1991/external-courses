@@ -1,0 +1,1 @@
+new MainController().init();

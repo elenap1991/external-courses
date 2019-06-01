@@ -1,0 +1,118 @@
+.article_header,
+.article_filter {
+    color: #444c63;
+    font-size: 22px;
+    height: 70px;
+    background-color: #eef1f7;
+    border-bottom: 1px solid #dadfea;
+    border-top: 1px solid #f4f6fa;
+}
+
+.article_header-label {
+    margin: 23px;
+}
+
+.article_filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article_filter ul {
+    display: flex;
+    width: 355px;
+}
+
+.article_filter li {
+    padding: 4px 11px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.article_filter li:hover {
+    background-color: #97b3ce;
+}
+
+.article_books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article_books img {
+    width: 200px;
+    height: 275px;
+}
+
+.article_books h3 {
+    color: #444c63;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.article_books p {
+    color: #6f7d95;
+    font-size: 12px;
+    margin: 0;
+}
+
+.article_books_book {
+    margin: 30px 20px;
+    width: 200px;
+}
+
+.star_selected {
+    fill: #ffab00;
+    stroke: #ffab00;
+    stroke-width: 2px;
+}
+
+.star_unselected {
+    stroke: #ffab00;
+    fill: white;
+    stroke-width: 2px;
+}
+
+.star_tmpselected {
+    fill: #ffab00;
+    stroke: #ffab00;
+}
+
+.star_tmpunselected {
+    fill: white;
+    stroke: #facc6f;
+}
+
+.article_search {
+    width: 400px;
+    height: 32px;
+    border: 1px solid rgba(140, 151, 178, 0.4);
+    border-radius: 16px;
+    padding: 0 17px;
+    outline: none;
+}
+
+.article_search::-moz-placeholder {
+    color: #8c97b2;
+}
+
+.article_search::-webkit-input-placeholder {
+    color: #8c97b2;
+}
+
+.article_search-img {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    width: 13px;
+    height: 13px;
+}
+
+.article_search-label {
+    position: relative;
+    height: 32px;
+}
+
+.article_filter .selected-filter {
+    font-weight: bold;
+}

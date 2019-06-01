@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/12093.ttf);
+}
+
+.library {
+    display: grid;
+    margin: 0;
+    font-family: "Proxima Nova";
+    grid-template-areas: "header header" "navigation article" "footer footer";
+    grid-template-columns: 200px 1fr;
+}
+
+.header {
+    grid-area: header;
+    height: 45px;
+    background-color: #2f364a;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-top-right-radius: 4px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navigation {
+    height: 100%;
+    grid-area: navigation;
+    background-color: #181e2c;
+    margin: 44px 0;
+}
+
+.article {
+    grid-area: article;
+    margin: 45px 0;
+}
+
+.footer {
+    height: 45px;
+    grid-area: footer;
+    background-color: #181e2c;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.library ul {
+    padding: 0;
+}
+
+.library li {
+    color: #78829d;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 0 0 0 46px;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.library li:hover {
+    color: white;
+    background-color: #15a4fa;
+}
