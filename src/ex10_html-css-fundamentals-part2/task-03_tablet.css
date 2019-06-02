@@ -1,0 +1,79 @@
+@media only screen and ( max-width: 1345px) {
+    .main-container {
+        display: grid;
+        grid-template-areas: "nav header search" "article article article " "footer footer footer ";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .header {
+        justify-content: center;
+    }
+    .header__logo {
+        height: 97px;
+        background-image: url(image/logo_background_small.png);
+        background-position-y: -7px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    .header__logo h1 {
+        padding: 0 50px;
+    }
+    .header__contact {
+        display: none;
+    }
+    .navigation {
+        grid-area: nav;
+        height: 97px;
+    }
+    .navigation:hover .navigation__button {
+        margin: 0 40px;
+        transform: rotate(90deg);
+    }
+    .navigation__button {
+        margin: 0 40px;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation:hover ul {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        top: 97px;
+        left: 10px;
+        padding: 10px;
+        display: block;
+    }
+    .navigation ul {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        top: 97px;
+        left: 10px;
+        padding: 10px;
+    }
+    .navigation li {
+        height: 50px;
+        list-style-type: none;
+    }
+    .navigation a {
+        font-size: 20pt;
+    }
+    .search {
+        justify-content: flex-end;
+        padding: 0 40px;
+    }
+    .article__background {
+        background-image: url(image/iback_small.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 736px;
+        max-width: 1345px;
+        min-width: 800px;
+    }
+    .article_articles-space {
+        min-width: 10px;
+        max-width: 215px;
+        width: 100%;
+    }
+    .article__slider {
+        display: none;
+    }
+}

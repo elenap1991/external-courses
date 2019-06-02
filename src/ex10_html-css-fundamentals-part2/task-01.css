@@ -1,13 +1,16 @@
-input{
-    margin:10px 0;
+input {
+    margin: 10px 0;
 }
+
 .interval::-webkit-outer-spin-button,
 .interval::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-.interval{
+
+.interval {
     -moz-appearance: textfield;
 }
-form{
+
+form {
     font-family: arial;
 }

@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Task 01</title>
     <link rel="stylesheet" type="text/css" href="task-01.css">
 </head>
-    <body>
-        <form method="GET" action="http://httpbin.org/get">
-            <fieldset>
-                <legend>Personal data</legend>
-                <label>Surname
-                    <input>
-                </label>
-                <br>
-                <label>First Name
-                    <input>
-                </label>
-                <br>
-                <label>Middle Name
-                    <input>
-                </label>
-                <br>
-                <label>You are
-                <input type="radio" name="sex">
-                male</label>
-                <label><input type="radio" name="sex">
-                female</label>
-                <br>
-                <label>Age
-                    <input class="interval" type="number" min = "18" max = "101">
-                </label>
-                <br>
-                <label for="select">Country of Residence</label>
-                    <select id="select">
-                        <option disabled selected>Country</option>
-                        <option>Russia</option>
-                    </select>
-                <br>
-                <label>City
-                    <input type="checkbox">
-                    Ryazan</label>
-                    <input type="checkbox">
-                    <label>Moscow
-                </label>
-                <br>
-                <label>Photography
-                    <input type="file">
-                </label>
-                <hr>
-                <label>Title
-                    <select size="8">
-                        <optgroup label="Technologies">
-                            <option>Web Master</option>
-                            <option>Database Administrator</option>
-                            <option>Computer-aided design</option>
-                        </optgroup>
-                        <optgroup label="Finance">
-                            <option>Economic Planning</option>
-                            <option>Managment accounting</option>
-                            <option>Budgeting and planning</option>
-                        </optgroup>
-                    </select>
-                </label>
-                <br>
-                <label>Salary
-                    <input type="range">
-                </label>
-                <br>
-                <textarea cols="50" rows="10" placeholder="Tell about yourself..."></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>Site
-                    <input type="url">
-                </label>
-                <br>
-                <label>Email
-                    <input type="email">
-                </label>
-                <br>
-                <label>Phone
-                        <input type="tel">
-                </label>
-            </fieldset>
-            <label>Password
-                <input type="password" required>
+
+<body>
+    <form method="GET" action="http://httpbin.org/get">
+        <fieldset>
+            <legend>Personal data</legend>
+            <label for="inpSurname">Surname
+                <input type="text" id ="inpSurname">
             </label>
             <br>
-            <input type="submit" value="Отправить">
-            <input type="reset" value="Сбросить">
-        </form>
-    </body>
+            <label for="inpFirstName">First Name
+                <input type="text" id ="inpFirstName">
+            </label>
+            <br>
+            <label for="inpMiddleName">Middle Name
+                <input type="text" id ="inpMiddleName">
+            </label>
+            <br>
+            <label for="inpSexMale">You are
+                <input type="radio" name="sex" id ="inpSexMale">
+                male
+            </label>
+            <label for="inpSexFemale">
+                <input type="radio" name="sex" id ="inpSexFemale">
+                female
+            </label>
+            <br>
+            <label for="inpAge">Age
+                <input class="interval" type="number" min = "18" max = "101" id ="inpAge">
+            </label>
+            <br>
+            <label for="select">Country of Residence</label>
+            <select id="select">
+                <option disabled selected>Country</option>
+                <option>Russia</option>
+            </select>
+            <br>
+            <label for="cbCityVal1">City
+                <input type="checkbox" id ="cbCityVal1">
+                Ryazan
+            </label>
+            <input type="checkbox" id="cbCityVal2">
+            <label for="cbCityVal2">Moscow</label>
+            <br>
+            <label for="fileImage">Photography
+                <input type="file" id ="fileImage">
+            </label>
+            <hr>
+            <label for="optgroup">Title
+                <select size="8" id = "optgroup">
+                    <optgroup label="Technologies">
+                        <option>Web Master</option>
+                        <option>Database Administrator</option>
+                        <option>Computer-aided design</option>
+                    </optgroup>
+                    <optgroup label="Finance">
+                        <option>Economic Planning</option>
+                        <option>Managment accounting</option>
+                        <option>Budgeting and planning</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <label for="range">Salary
+                <input type="range" id ="range">
+            </label>
+            <br>
+            <textarea cols="50" rows="10" placeholder="Tell about yourself..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="inpUrl">Site
+                <input type="url" id ="inpUrl">
+            </label>
+            <br>
+            <label for="inpEmail">Email
+                <input type="email" id ="inpEmail">
+            </label>
+            <br>
+            <label for="inpTelNumber">Phone
+                <input type="tel" id ="inpTelNumber">
+            </label>
+        </fieldset>
+        <label for="inpPassword">Password
+            <input type="password" required id ="inpPassword">
+        </label>
+        <br>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+    </form>
+</body>
+
 </html>
