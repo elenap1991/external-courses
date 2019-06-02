@@ -1,0 +1,189 @@
+@media only screen and ( min-width: 1346px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .mainContainer {
+        max-width: 2000px;
+        display: grid;
+        grid-template-areas: "header header" "nav search" "article article" "footer footer";
+        grid-template-columns: 2fr 1fr;
+    }
+    .flex-center-for-full {
+        display: flex;
+        align-items: center;
+    }
+    .header {
+        grid-area: header;
+        justify-content: space-around;
+        height: 217px;
+    }
+    .header__logo {
+        background-image: url(image/logo.png);
+        width: 403px;
+        height: 93px;
+        justify-content: center;
+    }
+    .navigation {
+        grid-area: nav;
+        background-color: #ffffff;
+        border-top: 1px #eceef4 solid;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navigation ul {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        margin: 0 93px;
+    }
+    .navigation li {
+        list-style-type: none;
+        background: white;
+        border-left: 1px #eceef4 solid;
+        margin: 1px 0;
+    }
+    .navigation li:hover {
+        background-image: url(image/active.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .navigation li:first-child {
+        border-left: none;
+    }
+    .header__contact {
+        width: 227px;
+        margin: 66px 0 7px 0;
+    }
+    .header__contact img {
+        margin: 0 22px;
+    }
+    .header__contact-container-item {
+        position: relative;
+    }
+    .header__contact-hint {
+        display: none;
+    }
+    .header__contact-container-item:hover .header__contact-hint {
+        display: inline-block;
+        position: absolute;
+        width: 227px;
+        height: 55px;
+        background: white;
+        border: 2px solid #d4d4d5;
+        border-radius: 8px;
+        top: -90px;
+        left: -78px;
+    }
+    .header__contact-hint::before {
+        content: "";
+        border: 17px rgba(1, 1, 1, 0) solid;
+        position: absolute;
+        border-top-color: white;
+        bottom: -32px;
+        left: 93px;
+    }
+    .header__contact-hint::after {
+        content: "";
+        border: 17px rgba(1, 1, 1, 0) solid;
+        position: absolute;
+        border-top-color: #d4d4d5;
+        bottom: -35px;
+        left: 93px;
+        z-index: -1;
+    }
+    .header__contact-hint p {
+        text-align: center;
+        font-size: 16px;
+        color: #6d6e71;
+    }
+    .search {
+        border-top: 1px #eceef4 solid;
+        margin: 0;
+        justify-content: flex-start;
+        padding: 0 93px;
+    }
+    .article_articles-container {
+        display: flex;
+        justify-content: center;
+    }
+    .navigation a {
+        font-size: 13px;
+    }
+    .navigation__button {
+        display: none;
+    }
+    .article__background {
+        background-image: url(image/iback.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 885px;
+        max-width: 2000px;
+        min-width: 1345px;
+    }
+    .article__slider {
+        display: flex;
+        margin-top: 146px;
+    }
+    .article__slider-item {
+        display: inline-block;
+        width: 322px;
+        min-width: 322px;
+        height: 241px;
+        margin: 0 1px;
+    }
+    .article__slider-item div {
+        width: 322px;
+        height: 65px;
+        bottom: 65px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 176px;
+    }
+    .article__slider-item_green {
+        background-image: url(image/slider_img2.png);
+        color: #ffffff;
+    }
+    .article__slider-item_orange {
+        background-image: url(image/slider_img1.png);
+        color: #cc9800;
+    }
+    .article__slider-item_green div {
+        background-image: url(image/slider_back2.png);
+    }
+    .article__slider-item_orange div {
+        background-image: url(image/slider_back1.png);
+    }
+    .article__slider-item p {
+        margin: 12px;
+        font-size: 14px;
+    }
+    .article__slider-scroll {
+        width: 111px;
+        height: 241px;
+        background-color: #f4f4f4;
+        margin: 0 1px;
+    }
+    .article__slider-scroll:hover {
+        background-color: #fafafa;
+    }
+    .article__slider-scroll img {
+        margin: 100px 44px;
+    }
+    .article__slider div:nth-child(1) {
+        max-width: 825px;
+        width: 100%;
+    }
+    .article__slider div:nth-child(5) {
+        max-width: 420px;
+        width: 100%;
+    }
+    .article_articles-space {
+        min-width: 200px;
+        max-width: 420px;
+        width: 100%;
+    }
+}
